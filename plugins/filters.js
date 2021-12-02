@@ -120,7 +120,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if (!!message.mention && message.mention[0] == '919150919486@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./carlo/Da.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         
-const array = ['ara','avidye ayiirun','Big fan','bgm','bot','chelpo sheri avum','cr7 suiii','cristiano ronaldo','chunk','Chunk','enth','eda poda','group power','mass da','muthe','nan cherikano kariyano,'nan pokun bye bye','nee ara','nee oru voice edd','nanban','popular aya','power','poyii','para da','peddi ano','poda','poda koppe','uyir','killadi','kolam mone','mapp onum parayatta poko','kozhi','alive','song','help']
+const array = ['ara','avidye ayiirun','Big fan','bgm','bot','chelpo sheri avum','cr7 suiii','cristiano ronaldo','chunk','Chunk','enth','eda poda','group power','mass da','muthe','nan cherikano kariyano,'nan pokunu bye bye','nee ara','nee oru voice edd','nanban','popular aya','power','poyii','para da','peddi ano','poda','poda koppe','uyir','killadi','kolam mone','mapp onum parayatta poko','kozhi','alive','song','help']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
